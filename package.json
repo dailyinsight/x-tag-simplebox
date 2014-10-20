@@ -1,0 +1,11 @@
+{
+    "name": "x-simplebox",
+    "version": "0.1.0",
+    "dependencies": {},
+    "devDependencies": {
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dailyinsight/x-tags-simplebox"
+    }
+}

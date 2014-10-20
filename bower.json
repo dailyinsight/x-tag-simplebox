@@ -1,0 +1,17 @@
+{
+    "name": "x-tag-simplebox",
+    "description": "One-at-a-time content holder",
+    "version": "0.1.0",
+    "keywords": [
+        "web-components",
+        "structural",
+        "element",
+        "x-tag"
+    ],
+    "main": [
+        "src/simplebox.js"
+    ],
+    "dependencies": {
+        "x-tag-core": "*"
+    }
+}
