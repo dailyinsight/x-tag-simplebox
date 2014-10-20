@@ -13,5 +13,6 @@
     ],
     "dependencies": {
         "x-tag-core": "*"
-    }
+    },
+    "ignore": []
 }
