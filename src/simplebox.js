@@ -1,15 +1,15 @@
-(function () {
+(function() {
     xtag.register('x-simplebox', {
         lifecycle: {
             created: function() {
-                $(this).children().css('display', 'none');
-                $(this).children().first().css('display', 'block');
+                $(this).children().hide();
+                $(this).children().first().show();
             },
         },
         events: {
           reveal: function(e){
-            $(this).children().css('display', 'none');
-            $(e.target).css('display', 'block');
+            $(this).children().hide();
+            $(e.target).show();
           }
         }
     });

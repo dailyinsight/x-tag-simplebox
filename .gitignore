@@ -1,1 +1,3 @@
-.DS_Store
+bower_components
+demo/components.js
+node_modules

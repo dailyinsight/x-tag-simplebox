@@ -12,7 +12,8 @@
         "src/simplebox.js"
     ],
     "dependencies": {
-        "x-tag-core": "*"
+        "x-tag-core": "*",
+        "x-tag-tabbar": "0.1.8"
     },
     "ignore": []
 }
