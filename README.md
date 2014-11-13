@@ -2,6 +2,24 @@
 
 A container that always shows exactly one of its children at a time.
 
+Sadly no tests are available at this time.
+
+# Workflow
+
+## Setup
+
+`make deps` (note runs build after installing dependencies)
+
+## Do work
+
+Make changes...
+
+Lint: `make lint`
+
+Build: `make build`
+
+Rinse, repeat
+
 # Syntax
 
 ```html
@@ -37,3 +55,7 @@ Designed to be drop-in usable with [`x-tag-tabbar`](https://github.com/x-tag/tab
     </x-tabbar-tab>
 </x-tabbar>
 ```
+
+# Demo
+
+Be sure you've built the project. Open demo.html from the demo directory in your browser.

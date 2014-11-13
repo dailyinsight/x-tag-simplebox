@@ -11,5 +11,5 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-smush-components');
 
-    grunt.registerTask('build', ['jshint', 'smush-components']);
+    grunt.registerTask('build', ['smush-components']);
 };
