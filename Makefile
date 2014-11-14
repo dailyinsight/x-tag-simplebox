@@ -1,13 +1,13 @@
-.PHONE: build
+all: deps demo/components.js lint
 
 bower_components: bower.json
 	./node_modules/.bin/bower install
 	touch $@
 
-build:
+demo/components.js: $(shell find ./bower_components -type f -name '*.js')
 	./node_modules/.bin/grunt -v smush-components
 
-deps: node_modules bower_components build
+deps: node_modules bower_components
 
 lint:
 	./node_modules/.bin/jshint src

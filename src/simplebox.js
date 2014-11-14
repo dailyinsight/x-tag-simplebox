@@ -1,16 +1,26 @@
 (function() {
+    'use strict';
     xtag.register('x-simplebox', {
         lifecycle: {
             created: function() {
-                $(this).children().hide();
-                $(this).children().first().show();
+                var children = this.children;
+                var childIndex;
+                for (childIndex = 0; childIndex < children.length; childIndex++) {
+                    children[childIndex].style.display = 'none';
+                }
+
+                this.children[0].style.display = '';
             },
         },
         events: {
-          reveal: function(e){
-            $(this).children().hide();
-            $(e.target).show();
-          }
+            reveal: function(e){
+                var children = this.children;
+                var childIndex;
+                for (childIndex = 0; childIndex < children.length; childIndex++) {
+                    children[childIndex].style.display = 'none';
+                }
+                e.target.style.display = '';
+            }
         }
     });
 })();

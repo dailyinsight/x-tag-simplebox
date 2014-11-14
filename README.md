@@ -6,19 +6,9 @@ Sadly no tests are available at this time.
 
 # Workflow
 
-## Setup
-
-`make deps` (note runs build after installing dependencies)
-
-## Do work
-
-Make changes...
-
-Lint: `make lint`
-
-Build: `make build`
-
-Rinse, repeat
+1. `make`
+1. Make changes...
+1. Rinse, repeat
 
 # Syntax
 
