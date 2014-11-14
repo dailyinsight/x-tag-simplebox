@@ -1,24 +1,24 @@
 (function() {
     'use strict';
+
+    function hideNodes(nodeList) {
+        var nodeIndex;
+        for (nodeIndex = nodeList.length - 1; nodeIndex >= 0; nodeIndex--) {
+            console.log(nodeIndex);
+            nodeList[nodeIndex].style.display = 'none';
+        }
+    }
+
     xtag.register('x-simplebox', {
         lifecycle: {
             created: function() {
-                var children = this.children;
-                var childIndex;
-                for (childIndex = 0; childIndex < children.length; childIndex++) {
-                    children[childIndex].style.display = 'none';
-                }
-
+                hideNodes(this.children);
                 this.children[0].style.display = '';
             },
         },
         events: {
             reveal: function(e){
-                var children = this.children;
-                var childIndex;
-                for (childIndex = 0; childIndex < children.length; childIndex++) {
-                    children[childIndex].style.display = 'none';
-                }
+                hideNodes(this.children);
                 e.target.style.display = '';
             }
         }
