@@ -4,7 +4,6 @@
     function hideNodes(nodeList) {
         var nodeIndex;
         for (nodeIndex = nodeList.length - 1; nodeIndex >= 0; nodeIndex--) {
-            console.log(nodeIndex);
             nodeList[nodeIndex].style.display = 'none';
         }
     }
